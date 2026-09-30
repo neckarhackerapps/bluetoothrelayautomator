@@ -137,8 +137,8 @@ com.neckarhackerapps.bluetoothrelayautomator
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/derntl/bt-relais-automator.git
-   cd bt-relais-automator
+   git clone https://github.com/neckarhackerapps/bluetoothrelaisautomator.git
+   cd bluetoothrelaisautomator
    ```
 
 2. **Run Unit Tests**:
@@ -172,6 +172,10 @@ The app requests only the minimum required permissions to communicate with BLE h
 - `VIBRATE` (Haptic pulse feedback on widget tap)
 
 No internet permission is declared — the app never connects to external servers or tracks user data.
+
+## Privacy Policy / Datenschutzerklärung
+
+The app operates on a strict **Zero-Data-Collection** policy. For full details complying with the Google Play Developer Policy and GDPR / DSGVO, please see the [Privacy Policy](privacy.html).
 
 ---
 

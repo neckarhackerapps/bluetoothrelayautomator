@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy / Datenschutzerklärung - Bluetooth Relay Automator</title>
+  <meta name="description" content="Datenschutzerklärung und Privacy Policy für die Android-App Bluetooth Relay Automator (com.neckarhackerapps.bluetoothrelayautomator).">
+  <link rel="icon" type="image/png" href="assets/app_icon_rounded_512x512.png">
+  <style>
+    :root {
+      --primary: #0D6EFD;
+      --primary-dark: #0A58CA;
+      --primary-light: #E7F1FF;
+      --accent-green: #10B981;
+      --accent-green-bg: #ECFDF5;
+      --bg: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --text: #0F172A;
+      --text-muted: #64748B;
+      --border: #E2E8F0;
+      --radius: 12px;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #3B82F6;
+        --primary-dark: #60A5FA;
+        --primary-light: #1E293B;
+        --accent-green: #34D399;
+        --accent-green-bg: #064E3B;
+        --bg: #0F172A;
+        --card-bg: #1E293B;
+        --text: #F1F5F9;
+        --text-muted: #94A3B8;
+        --border: #334155;
+        --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 24px 16px 64px 16px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .app-icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 22px;
+      box-shadow: 0 8px 16px rgba(13, 110, 253, 0.2);
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+
+    .app-meta {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .app-meta code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      background: var(--border);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+
+    /* Language Switcher */
+    .lang-switcher {
+      display: inline-flex;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 4px;
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+    }
+
+    .lang-btn {
+      border: none;
+      background: none;
+      padding: 8px 20px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      border-radius: 24px;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn.active {
+      background: var(--primary);
+      color: #FFFFFF;
+      box-shadow: 0 2px 4px rgba(13, 110, 253, 0.3);
+    }
+
+    /* Privacy Highlight Badge */
+    .highlight-card {
+      background: var(--accent-green-bg);
+      border: 1px solid var(--accent-green);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .highlight-card svg {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      color: var(--accent-green);
+    }
+
+    .highlight-card p {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    /* Content Cards */
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-top: 24px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 18px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin-bottom: 14px;
+      font-size: 15px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 16px;
+    }
+
+    li {
+      margin-bottom: 6px;
+      font-size: 15px;
+    }
+
+    /* Table */
+    .table-container {
+      overflow-x: auto;
+      margin: 16px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    th, td {
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+    }
+
+    th {
+      background: var(--primary-light);
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    /* Badges */
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 12px;
+      background: var(--primary-light);
+      color: var(--primary);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Language Section Visibility */
+    .lang-section {
+      display: none;
+    }
+
+    .lang-section.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <img src="assets/app_icon_rounded_512x512.png" alt="Bluetooth Relay Automator Icon" class="app-icon">
+      <h1>Bluetooth Relay Automator</h1>
+      <div class="app-meta">
+        Application ID: <code>com.neckarhackerapps.bluetoothrelayautomator</code> | Version 1.8
+      </div>
+
+      <!-- Language Selector -->
+      <div class="lang-switcher" role="tablist" aria-label="Language switcher">
+        <button class="lang-btn active" id="btn-de" onclick="setLanguage('de')" role="tab" aria-selected="true">🇩🇪 Deutsch</button>
+        <button class="lang-btn" id="btn-en" onclick="setLanguage('en')" role="tab" aria-selected="false">🇬🇧 English</button>
+      </div>
+    </header>
+
+    <!-- =================================================================== -->
+    <!-- DEUTSCHE VERSION (Datenschutzerklärung)                             -->
+    <!-- =================================================================== -->
+    <div id="section-de" class="lang-section active" role="tabpanel">
+
+      <div class="highlight-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          <polyline points="9 12 11 14 15 10"/>
+        </svg>
+        <p>Zero-Data-Collection: Diese App erfasst, speichert oder überträgt keinerlei personenbezogene Daten. Sie funktioniert 100% offline ohne Cloud, Tracker oder Werbenetzwerke.</p>
+      </div>
+
+      <div class="card">
+        <h2>1. Überblick &amp; Grundprinzipien</h2>
+        <p>Der Schutz deiner Privatsphäre ist für uns von höchster Bedeutung. Diese Datenschutzerklärung klärt Nutzer über die Art, den Umfang und die Zwecke der Verarbeitung von Daten in der Android-App <strong>Bluetooth Relay Automator</strong> (nachfolgend „App“) auf.</p>
+        <p><strong>Das Kernprinzip der App lautet: Datensparsamkeit und Privatsphäre durch Design.</strong></p>
+        <ul>
+          <li><strong>Keine Erfassung personenbezogener Daten:</strong> Wir erheben, verarbeiten und speichern keine Identitätsdaten, Kontaktdaten oder Gerätekennungen.</li>
+          <li><strong>Keine Internetverbindung:</strong> Die App fordert im Android-Manifest nicht einmal die Berechtigung <code>android.permission.INTERNET</code> an. Eine Datenübertragung an externe Server oder Dritte ist technisch ausgeschlossen.</li>
+          <li><strong>Keine Benutzerkonten:</strong> Für die Nutzung der App ist keine Registrierung und kein Login erforderlich.</li>
+          <li><strong>Keine Tracking- oder Analysedienste:</strong> Wir setzen keinerlei Analyse- oder Telemetrie-SDKs ein (kein Firebase, kein Google Analytics, etc.).</li>
+          <li><strong>Keine Werbung:</strong> Die App ist vollständig werbefrei und bindet keine Werbenetzwerke ein.</li>
+        </ul>
+
+        <h2>2. Verantwortliche Stelle</h2>
+        <p>Verantwortlicher Entwickler im Sinne der Datenschutz-Grundverordnung (DSGVO) und der Google Play Developer Policies:</p>
+        <p>
+          <strong>Neckarhacker Apps</strong><br>
+          E-Mail: <a href="mailto:neckarhackerapps@gmail.com">neckarhackerapps@gmail.com</a><br>
+          GitHub: <a href="https://github.com/neckarhackerapps/bluetoothrelaisautomator" target="_blank" rel="noopener">github.com/neckarhackerapps/bluetoothrelaisautomator</a>
+        </p>
+
+        <h2>3. Berechtigungen und deren genauer Zweck</h2>
+        <p>Damit die App Bluetooth Low Energy (BLE) Schaltrelais ansteuern und automatisieren kann, benötigt sie bestimmte technische Android-Berechtigungen. Jede Berechtigung dient ausschließlich der beschriebenen lokalen Funktionalität:</p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Berechtigung</th>
+                <th>Android-Version</th>
+                <th>Zweck &amp; Notwendigkeit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>BLUETOOTH_SCAN</code><br><span class="badge">neverForLocation</span></td>
+                <td>Android 12+ (API 31+)</td>
+                <td>Ermöglicht das Scannen nach Bluetooth Low Energy Relais in Funkreichweite sowie die Live-Statusanzeige. Das Attribut <code>neverForLocation</code> ist explizit gesetzt: Es werden keine Standortdaten aus dem Scan abgeleitet.</td>
+              </tr>
+              <tr>
+                <td><code>BLUETOOTH_CONNECT</code></td>
+                <td>Android 12+ (API 31+)</td>
+                <td>Ermöglicht den Aufbau einer direkten BLE GATT-Verbindung zum Relais und das Senden von Schaltbefehlen (ON, OFF, HEX).</td>
+              </tr>
+              <tr>
+                <td><code>ACCESS_FINE_LOCATION</code><br><code>ACCESS_COARSE_LOCATION</code></td>
+                <td>Android 6 bis 11 (API 23–30)</td>
+                <td>Von Google bis einschließlich Android 11 zwingend vorgeschrieben, um nach BLE-Geräten suchen zu dürfen. <strong>Wichtig:</strong> Die App liest zu keinem Zeitpunkt deinen GPS-Standort aus, noch wird dein physischer Standort erfasst oder gespeichert.</td>
+              </tr>
+              <tr>
+                <td><code>BLUETOOTH</code><br><code>BLUETOOTH_ADMIN</code></td>
+                <td>Android 11 und älter</td>
+                <td>Standard-Bluetooth-Berechtigungen älterer Android-Versionen für die Bluetooth-Kommunikation.</td>
+              </tr>
+              <tr>
+                <td><code>FOREGROUND_SERVICE</code><br><code>FOREGROUND_SERVICE_CONNECTED_DEVICE</code></td>
+                <td>Alle Versionen (ab Android 9 / 14)</td>
+                <td>Erforderlich, damit beim Antippen eines Homescreen-Widgets das gewünschte Makro (z. B. Impuls) zuverlässig und ohne Unterbrechung durch das Android-Batteriemanagement im Hintergrund abgearbeitet werden kann.</td>
+              </tr>
+              <tr>
+                <td><code>POST_NOTIFICATIONS</code></td>
+                <td>Android 13+ (API 33+)</td>
+                <td>Wird ausschließlich dazu verwendet, während der Ausführung eines Makros über ein Widget eine Status-Benachrichtigung anzuzeigen, wie vom Android-System für Vordergrunddienste vorgeschrieben.</td>
+              </tr>
+              <tr>
+                <td><code>VIBRATE</code></td>
+                <td>Alle Versionen</td>
+                <td>Bietet kurzes haptisches Feedback bei der Bedienung von Startbildschirm-Widgets.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>4. Lokale Datenspeicherung auf deinem Endgerät</h2>
+        <p>Die App speichert Konfigurationsdaten ausschließlich lokal im geschützten App-Speicherbereich (Android SharedPreferences) deines Geräts:</p>
+        <ul>
+          <li><strong>Gespeicherte Relais:</strong> Bluetooth-MAC-Adresse des Relais und optional der von dir vergebene Anzeigename (z. B. „Garagentor“).</li>
+          <li><strong>Eigene Makros:</strong> Von dir erstellte Schrittfolgen (Befehle wie ON, DELAY, OFF, Zielgeräte-Zuordnung, Farben).</li>
+          <li><strong>Ausführungs-Historie (Logs):</strong> Ein lokales Protokoll der letzten maximal 100 Ausführungen mit Zeitstempel und Erfolgsstatus.</li>
+          <li><strong>Widget-Konfiguration:</strong> Zuordnung, welches Widget auf dem Startbildschirm welches Makro ausführt.</li>
+        </ul>
+        <p>Diese Daten verlassen dein Smartphone zu keinem Zeitpunkt.</p>
+
+        <h2>5. Löschung von Daten</h2>
+        <p>Du hast jederzeit die volle Kontrolle über deine lokalen Daten:</p>
+        <ul>
+          <li>Einzelne Relais, Makros oder die Historie können direkt in der Benutzeroberfläche der App gelöscht werden.</li>
+          <li>Über die Android-Einstellungen (<em>Apps &rarr; Bluetooth Relay Automator &rarr; Speicher &rarr; Speicherinhalt löschen</em>) werden sämtliche Daten vollständig und unwiderruflich gelöscht.</li>
+          <li>Bei der Deinstallation der App werden sämtliche gespeicherten Daten durch das Android-Betriebssystem automatisch rückstandslos entfernt.</li>
+        </ul>
+
+        <h2>6. Dienste von Drittanbietern</h2>
+        <p>Die App bindet keine Dienste, APIs oder Bibliotheken von Drittanbietern ein, die Nutzerdaten erfassen. Es findet keine Datenübermittlung an Analyseunternehmen, Werbedienstleister oder sonstige Partner statt.</p>
+
+        <h2>7. Schutz von Minderjährigen (COPPA / Jugendschutz)</h2>
+        <p>Die App richtet sich an ein allgemeines Publikum und erfasst zu keinem Zeitpunkt personenbezogene Daten von Nutzern jedweden Alters, einschließlich Kindern unter 13 bzw. 16 Jahren.</p>
+
+        <h2>8. Betroffenenrechte nach der DSGVO</h2>
+        <p>Als Nutzer in der Europäischen Union stehen dir nach der Datenschutz-Grundverordnung (DSGVO) umfassende Rechte zu (u. a. Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung). Da wir keinerlei personenbezogene Daten von dir erheben oder speichern, sind in der Regel keine Daten vorhanden, auf die zugegriffen werden könnte. Sämtliche lokale Konfigurationsdaten kannst du selbst direkt in der App oder den Android-Systemeinstellungen einsehen, anpassen und löschen.</p>
+
+        <h2>9. Änderungen dieser Datenschutzerklärung</h2>
+        <p>Wir können diese Datenschutzerklärung bei Bedarf anpassen, um geänderten rechtlichen Vorgaben oder Erweiterungen der App gerecht zu werden. Die jeweils aktuelle Fassung ist stets in der App sowie unter dieser URL öffentlich einsehbar.</p>
+
+        <h2>10. Kontakt</h2>
+        <p>Bei Fragen zu dieser Datenschutzerklärung oder zur Funktionsweise der App wende dich bitte an:</p>
+        <p>
+          <strong>Neckarhacker Apps</strong><br>
+          E-Mail: <a href="mailto:neckarhackerapps@gmail.com">neckarhackerapps@gmail.com</a><br>
+          Projekt-Repository: <a href="https://github.com/neckarhackerapps/bluetoothrelaisautomator/issues" target="_blank" rel="noopener">Issue Tracker auf GitHub</a>
+        </p>
+      </div>
+
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- ENGLISH VERSION (Privacy Policy)                                    -->
+    <!-- =================================================================== -->
+    <div id="section-en" class="lang-section" role="tabpanel">
+
+      <div class="highlight-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          <polyline points="9 12 11 14 15 10"/>
+        </svg>
+        <p>Zero Data Collection: This application does not collect, store, or transmit any personal data. It operates 100% offline with zero cloud backend, analytics, or advertising.</p>
+      </div>
+
+      <div class="card">
+        <h2>1. Overview &amp; Core Philosophy</h2>
+        <p>Your privacy is of utmost importance to us. This Privacy Policy outlines the practices and principles of the Android application <strong>Bluetooth Relay Automator</strong> (referred to as "the App"), package name <code>com.neckarhackerapps.bluetoothrelayautomator</code>, regarding user data and device permissions in accordance with the Google Play Developer Distribution Agreement and Privacy Policies.</p>
+        <p><strong>The foundational philosophy of the App is privacy by design:</strong></p>
+        <ul>
+          <li><strong>No Personal Data Collection:</strong> We do not collect, process, track, or share any personal identity information, contact details, or device identifiers.</li>
+          <li><strong>No Internet Permission:</strong> The App does not declare or request the <code>android.permission.INTERNET</code> permission. It is technically incapable of transmitting data over the internet or connecting to remote servers.</li>
+          <li><strong>No Accounts Required:</strong> The App can be used immediately without registration, login, or user profiles.</li>
+          <li><strong>No Analytics or Telemetry:</strong> No analytics, tracking, or crash-reporting SDKs (such as Firebase, Google Analytics, Mixpanel, etc.) are embedded.</li>
+          <li><strong>No Advertising:</strong> The App contains no advertisements and integrates no ad networks.</li>
+        </ul>
+
+        <h2>2. Data Controller &amp; Developer Identity</h2>
+        <p>Developer responsible for the application:</p>
+        <p>
+          <strong>Neckarhacker Apps</strong><br>
+          Email: <a href="mailto:neckarhackerapps@gmail.com">neckarhackerapps@gmail.com</a><br>
+          GitHub Repository: <a href="https://github.com/neckarhackerapps/bluetoothrelaisautomator" target="_blank" rel="noopener">github.com/neckarhackerapps/bluetoothrelaisautomator</a>
+        </p>
+
+        <h2>3. Device Permissions &amp; Explicit Purpose</h2>
+        <p>To control, scan, and automate Bluetooth Low Energy (BLE) relay modules, the App requires certain Android permissions. Each permission is requested strictly for the technical purpose described below:</p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Permission</th>
+                <th>Target Android Version</th>
+                <th>Exact Purpose &amp; Justification</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>BLUETOOTH_SCAN</code><br><span class="badge">neverForLocation</span></td>
+                <td>Android 12+ (API 31+)</td>
+                <td>Allows the App to scan for nearby Bluetooth Low Energy relays and maintain real-time proximity status indicators. The <code>neverForLocation</code> flag is explicitly declared in the manifest, asserting that scanning results are never used to derive geographic location.</td>
+              </tr>
+              <tr>
+                <td><code>BLUETOOTH_CONNECT</code></td>
+                <td>Android 12+ (API 31+)</td>
+                <td>Enables direct GATT connections to selected BLE relays to send control commands (e.g. ON, OFF, DELAY, HEX commands).</td>
+              </tr>
+              <tr>
+                <td><code>ACCESS_FINE_LOCATION</code><br><code>ACCESS_COARSE_LOCATION</code></td>
+                <td>Android 6 to 11 (API 23–30)</td>
+                <td>Mandated strictly by the Android operating system on older releases in order to execute BLE scans. <strong>Important:</strong> The App never reads, accesses, logs, or stores your GPS or geographic location.</td>
+              </tr>
+              <tr>
+                <td><code>BLUETOOTH</code><br><code>BLUETOOTH_ADMIN</code></td>
+                <td>Android 11 and lower</td>
+                <td>Legacy permissions required on older Android versions for Bluetooth communication.</td>
+              </tr>
+              <tr>
+                <td><code>FOREGROUND_SERVICE</code><br><code>FOREGROUND_SERVICE_CONNECTED_DEVICE</code></td>
+                <td>All Versions (Android 9 / 14+)</td>
+                <td>Allows sequential execution of multi-step macros (e.g. Pulse or Connect sequences) when triggered via Homescreen Widgets without being terminated by OS battery optimization.</td>
+              </tr>
+              <tr>
+                <td><code>POST_NOTIFICATIONS</code></td>
+                <td>Android 13+ (API 33+)</td>
+                <td>Used solely to display a temporary notification while a background macro execution triggered by a homescreen widget is running, as required by Android foreground service rules.</td>
+              </tr>
+              <tr>
+                <td><code>VIBRATE</code></td>
+                <td>All Versions</td>
+                <td>Provides short haptic vibration feedback when a homescreen widget is triggered.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>4. Local Data Storage on Your Device</h2>
+        <p>The App stores operational configuration data strictly locally inside the private, sandboxed app storage (Android SharedPreferences) on your device:</p>
+        <ul>
+          <li><strong>Paired Relays:</strong> The Bluetooth MAC address and user-assigned alias name (e.g., "Garage Door").</li>
+          <li><strong>User Macros:</strong> Sequence of commands (e.g. ON, DELAY, OFF, target relay references, UI color tags).</li>
+          <li><strong>Execution History:</strong> Local log of the last 100 macro runs (timestamp, success status, execution duration).</li>
+          <li><strong>Widget Configuration:</strong> Mappings between homescreen widgets and their selected macros.</li>
+        </ul>
+        <p>This data remains strictly on your device and is never uploaded, synced, or shared.</p>
+
+        <h2>5. Data Retention &amp; User Control</h2>
+        <p>You have full, autonomous control over all local data:</p>
+        <ul>
+          <li>You can edit or delete individual relays, macros, and history entries directly within the App.</li>
+          <li>You can erase all stored data instantly at any time via Android Settings (<em>Settings &rarr; Apps &rarr; Bluetooth Relay Automator &rarr; Storage &rarr; Clear Storage</em>).</li>
+          <li>Uninstalling the App automatically and completely deletes all associated local data and preferences.</li>
+        </ul>
+
+        <h2>6. Third-Party Services</h2>
+        <p>The App does not integrate or link with any third-party SDKs, telemetry frameworks, or cloud APIs that collect user data. No information is transmitted to third parties.</p>
+
+        <h2>7. Children's Privacy (COPPA &amp; GDPR-K)</h2>
+        <p>The App is designed for a general audience. Because the App collects no personal information whatsoever, it does not knowingly solicit or collect data from children under the age of 13 (or under 16 in the European Union).</p>
+
+        <h2>8. Rights Under GDPR / CCPA</h2>
+        <p>Under international privacy regulations (such as the EU General Data Protection Regulation and the California Consumer Privacy Act), users are entitled to rights of access, rectification, and erasure. Because we do not collect, process, or hold any personal data on external systems, there are no remote records to access or delete. You retain direct physical control over all data stored locally on your device.</p>
+
+        <h2>9. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time to reflect functional improvements or changes in legal regulations. Any revisions will be published on this page with an updated modification date.</p>
+
+        <h2>10. Contact Us</h2>
+        <p>If you have any questions or concerns regarding this Privacy Policy or the security of the App, please contact us at:</p>
+        <p>
+          <strong>Neckarhacker Apps</strong><br>
+          Email: <a href="mailto:neckarhackerapps@gmail.com">neckarhackerapps@gmail.com</a><br>
+          Project Repository: <a href="https://github.com/neckarhackerapps/bluetoothrelaisautomator/issues" target="_blank" rel="noopener">GitHub Issues</a>
+        </p>
+      </div>
+
+    </div>
+
+    <footer>
+      <p>Last Updated: September 30, 2026 | Stand: 30. September 2026</p>
+      <p>&copy; 2026 Bluetooth Relay Automator &bull; Neckarhacker Apps</p>
+    </footer>
+  </div>
+
+  <script>
+    function setLanguage(lang) {
+      const deSection = document.getElementById('section-de');
+      const enSection = document.getElementById('section-en');
+      const btnDe = document.getElementById('btn-de');
+      const btnEn = document.getElementById('btn-en');
+
+      if (lang === 'en') {
+        deSection.classList.remove('active');
+        enSection.classList.add('active');
+        btnDe.classList.remove('active');
+        btnDe.setAttribute('aria-selected', 'false');
+        btnEn.classList.add('active');
+        btnEn.setAttribute('aria-selected', 'true');
+        document.documentElement.lang = 'en';
+        window.location.hash = 'en';
+      } else {
+        enSection.classList.remove('active');
+        deSection.classList.add('active');
+        btnEn.classList.remove('active');
+        btnEn.setAttribute('aria-selected', 'false');
+        btnDe.classList.add('active');
+        btnDe.setAttribute('aria-selected', 'true');
+        document.documentElement.lang = 'de';
+        window.location.hash = 'de';
+      }
+    }
+
+    // Initialize from URL hash or browser language
+    window.addEventListener('DOMContentLoaded', () => {
+      const hash = window.location.hash.toLowerCase();
+      if (hash === '#en') {
+        setLanguage('en');
+      } else if (hash === '#de') {
+        setLanguage('de');
+      } else {
+        const userLang = navigator.language || navigator.userLanguage || '';
+        if (userLang.startsWith('en')) {
+          setLanguage('en');
+        } else {
+          setLanguage('de');
+        }
+      }
+    });
+
+    window.addEventListener('hashchange', () => {
+      const hash = window.location.hash.toLowerCase();
+      if (hash === '#en') setLanguage('en');
+      if (hash === '#de') setLanguage('de');
+    });
+  </script>
+</body>
+</html>

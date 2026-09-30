@@ -80,51 +80,6 @@ The app is compatible with standard Bluetooth Low Energy relay modules and seria
 
 ---
 
-## Architecture & Code Structure
-
-```
-com.neckarhackerapps.bluetoothrelayautomator
-├── MainActivity.kt               # Main Jetpack Compose entry point
-├── RelayAutomatorApp.kt         # Application class, Dependency Injection & Notification Channels
-├── ble/                          # Bluetooth Low Energy engine
-│   ├── BleConnectionState.kt     # BLE connection state definitions
-│   ├── BleGattConstants.kt       # Known service/characteristic UUIDs & command byte helpers
-│   ├── BleRelayManager.kt        # GATT connection, characteristic discovery, and packet transmission
-│   └── BleScanner.kt             # High-speed BLE scanner with RSSI and proximity cache
-├── engine/                       # Automation engine
-│   ├── MacroExecutionState.kt    # State representation for executing macros
-│   └── MacroExecutor.kt          # Sequential macro executor with timeout, logging, and retry logic
-├── model/                        # Data models
-│   ├── ExecutionLog.kt           # History record for macro executions
-│   ├── Macro.kt                  # Macro definition with step list and device reference
-│   ├── MacroBleStatus.kt         # Proximity state (CONNECTED, IN_RANGE, NOT_IN_RANGE)
-│   ├── MacroStep.kt              # Command step (ON, OFF, DELAY, CONNECT, DISCONNECT, etc.)
-│   ├── RelayDevice.kt            # BLE device with MAC, name, alias, and RSSI
-│   └── TerminalEntry.kt          # Terminal event (TX, RX, INFO, ERROR)
-├── repository/                   # Local persistence layer (SharedPreferences & JSON)
-│   ├── ExecutionLogRepository.kt # Execution history repository
-│   ├── MacroRepository.kt        # Saved macros and default seed macros
-│   └── RelayRepository.kt        # Saved paired relays
-├── service/                      # Background services
-│   └── RelayMacroForegroundService.kt # Foreground service for widgets with haptics
-├── ui/                           # Jetpack Compose UI
-│   ├── MainAppScreen.kt          # Navigation bar (Macros, Devices, Terminal, History)
-│   ├── components/               # Reusable UI widgets (ConnectionStatusBar)
-│   └── screens/                  # Feature screens
-│       ├── DevicesScreen.kt      # BLE scanner and paired devices list
-│       ├── LogsScreen.kt         # Execution history and error details
-│       ├── MacroEditorDialog.kt  # Step-by-step macro editor and step tester
-│       ├── MacrosScreen.kt       # Macros dashboard with real-time BLE status indicators
-│       └── TerminalScreen.kt     # Live BLE terminal and direct command transmitter
-└── widget/                       # Homescreen App Widgets
-    ├── RelayMacroWidgetProvider.kt         # Standard 2x1 interactive widget
-    ├── RelayMacroCompactWidgetProvider.kt  # Compact 1x1 interactive widget
-    ├── RelayMacroWidgetConfigureActivity.kt# Widget configuration activity
-    └── WidgetConfigManager.kt              # Widget configuration persistence
-```
-
----
-
 ## Getting Started
 
 ### Prerequisites

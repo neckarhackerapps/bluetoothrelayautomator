@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 1. Relay Schematic Circuit Terminals (Left & Right) -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#99FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M14,54 L22,54" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M22,54 A3,3 0 1,1 21.99,54" />
+
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#99FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M86,54 L94,54" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M86,54 A3,3 0 1,1 85.99,54" />
+
+    <!-- Relay Switch Contact Arm (symbolizing the switching relay) -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FBBF24"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M24,52 L34,42" />
+    <path
+        android:fillColor="#FBBF24"
+        android:pathData="M34,42 A2.5,2.5 0 1,1 33.99,42" />
+
+    <!-- 2. Automation Gear Wheel (Zahnrad) representing the Automator -->
+    <group
+        android:pivotX="54"
+        android:pivotY="54">
+        <!-- Circular Gear Rim -->
+        <path
+            android:fillColor="#00000000"
+            android:strokeColor="#70FFFFFF"
+            android:strokeWidth="3.2"
+            android:pathData="M54,28 A26,26 0 1,1 53.99,28" />
+
+        <!-- 4 Orthogonal Teeth -->
+        <path
+            android:fillColor="#70FFFFFF"
+            android:pathData="M51.5,22.5 h5 v6 h-5 z M51.5,79.5 h5 v6 h-5 z M22.5,51.5 h6 v5 h-6 z M79.5,51.5 h6 v5 h-6 z" />
+    </group>
+
+    <!-- 4 Diagonal Teeth (45 degree rotation) -->
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:rotation="45">
+        <path
+            android:fillColor="#70FFFFFF"
+            android:pathData="M51.5,22.5 h5 v6 h-5 z M51.5,79.5 h5 v6 h-5 z M22.5,51.5 h6 v5 h-6 z M79.5,51.5 h6 v5 h-6 z" />
+    </group>
+
+    <!-- 3. Bluetooth Symbol (Cleanly proportioned inside the Gear) -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M44,45 L62,61 L54,69 L54,39 L62,47 L44,63" />
+
+    <!-- Small Automation Spark / Center Accent -->
+    <path
+        android:fillColor="#FBBF24"
+        android:strokeColor="#FBBF24"
+        android:strokeWidth="0.8"
+        android:pathData="M54.5,49 L51,54 L54.5,54 L53,59 L57,54 L53.5,54 Z" />
+
+</vector>

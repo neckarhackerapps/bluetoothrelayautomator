@@ -1,0 +1,145 @@
+<resources>
+    <string name="app_name">Bluetooth Relay Automator</string>
+
+    <!-- Navigation Tabs -->
+    <string name="tab_macros">Macros</string>
+    <string name="tab_devices">Devices</string>
+    <string name="tab_terminal">Terminal</string>
+    <string name="tab_logs">History</string>
+
+    <!-- Info & Support Dialog -->
+    <string name="info_title">Info</string>
+    <string name="info_dialog_title">Info &amp; Support</string>
+    <string name="info_dialog_message">Thank you for using Bluetooth Relay Automator! If you enjoy the app, I would appreciate a positive review – feel free to include suggestions for improvement – in the Play Store and small gifts in the form of BTC or ETH. Thank you!\n\nNote: This app operates exclusively via Bluetooth Low Energy (BLE) GATT services and is not compatible with Classic Bluetooth SPP (Serial Port Profile).</string>
+    <string name="btn_copy_address">Copy address</string>
+    <string name="address_copied">Address copied</string>
+    <string name="btn_close">Close</string>
+
+    <!-- Widgets -->
+    <string name="widget_name">Relay Macro</string>
+    <string name="widget_name_standard">Relay Macro (2x1)</string>
+    <string name="widget_name_compact">Relay Macro (1x1)</string>
+    <string name="widget_description">Directly executes a predefined Bluetooth relay macro.</string>
+    <string name="widget_compact_description">Compact 1x1 button for direct macro execution.</string>
+    <string name="widget_configure_title">Select Macro for Widget</string>
+    <string name="widget_select_macro_hint">Select a macro to execute when tapping the homescreen widget:</string>
+    <string name="widget_no_macros">No macros available yet. Please create a macro in the app first.</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">Macro Execution</string>
+    <string name="notification_channel_description">Notifications during background execution of Bluetooth relay macros.</string>
+    <string name="notification_running_title">Relay Macro Running</string>
+    <string name="notification_running_content">Executing macro \"%1$s\"...</string>
+    <string name="notification_success">Macro \"%1$s\" executed successfully.</string>
+    <string name="notification_error">Error in macro \"%1$s\": %2$s</string>
+
+    <!-- Common Buttons & Statuses -->
+    <string name="btn_run">Run</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_remove">Remove</string>
+    <string name="btn_connect">Connect</string>
+    <string name="btn_disconnect">Disconnect</string>
+    <string name="btn_add">Add</string>
+    <string name="btn_send">Send</string>
+    <string name="btn_clear">Clear</string>
+    <string name="editor_step_type_label">Select command type:</string>
+    <string name="editor_step_on_desc">Sends power ON hex command: A0 01 01 A2</string>
+    <string name="editor_step_off_desc">Sends power OFF hex command: A0 01 00 A1</string>
+    <string name="editor_step_disconnect_desc">Disconnects current BLE connection.</string>
+    <string name="status_ready">Ready</string>
+    <string name="status_executing">Executing...</string>
+    <string name="status_running">Running...</string>
+    <string name="status_starting">Starting...</string>
+    <string name="status_success">Success</string>
+    <string name="status_error">Error</string>
+
+    <!-- Connection Status Bar -->
+    <string name="conn_connected">Connected: %1$s</string>
+    <string name="conn_connecting">Connecting to %1$s...</string>
+    <string name="conn_disconnecting">Disconnecting...</string>
+    <string name="conn_error">Error: %1$s</string>
+    <string name="conn_disconnected">Disconnected (No relay connected)</string>
+
+    <!-- Devices Screen -->
+    <string name="dev_permission_required">Bluetooth Permissions Required</string>
+    <string name="dev_permission_desc">Permissions are required to scan and connect to Bluetooth Low Energy (BLE) relays. Note: Only BLE is supported, not Classic Bluetooth SPP.</string>
+    <string name="dev_grant_permission">Grant</string>
+    <string name="dev_bt_disabled">Bluetooth is disabled on your device. Please turn it on.</string>
+    <string name="dev_saved_title">Saved Relays (%1$d)</string>
+    <string name="dev_scan_stop">Stop</string>
+    <string name="dev_scan_start">BLE Scan</string>
+    <string name="dev_no_saved">No relays saved yet.\nStart \'BLE Scan\' above to discover your relay.</string>
+    <string name="dev_discovered_title">Discovered BLE Devices (%1$d)</string>
+    <string name="dev_scanning_active">Scanning for BLE (Bluetooth Low Energy) relays (Classic SPP not supported)...</string>
+    <string name="dev_pair_title">Pair &amp; Save Relay</string>
+    <string name="dev_pair_hint">Give this relay a descriptive name:</string>
+    <string name="dev_pair_name_label">Name (e.g. Garage Door, Garden Pump)</string>
+    <string name="dev_remove_title">Remove Relay?</string>
+    <string name="dev_remove_confirm">Do you want to delete relay \'%1$s\' (%2$s) from saved devices?</string>
+    <string name="dev_saved_badge">Saved</string>
+    <string name="dev_btn_save">+ Save</string>
+    <string name="dev_unknown_device">Unknown Device</string>
+
+    <!-- Terminal Screen -->
+    <string name="term_target_relay">Target Relay</string>
+    <string name="term_no_saved_relays">No saved relays. Pair one in \'Devices\' tab.</string>
+    <string name="term_connecting">Connecting...</string>
+    <string name="term_no_data">No data transmitted yet.\nConnect a BLE relay or send a command.\n(Note: Only BLE relays are supported, not Classic SPP).</string>
+    <string name="term_btn_on">ON</string>
+    <string name="term_btn_off">OFF</string>
+    <string name="term_btn_pulse">Pulse 500ms</string>
+    <string name="term_mode_hex">HEX</string>
+    <string name="term_mode_text">TEXT</string>
+    <string name="term_placeholder_hex">e.g. A0 01 01 A2</string>
+    <string name="term_placeholder_text">e.g. AT+...</string>
+    <string name="term_btn_clear">Clear Terminal</string>
+
+    <!-- Macros Screen -->
+    <string name="macros_title">Relay Macros (%1$d)</string>
+    <string name="macros_no_macros">No macros created yet.\nTap \'+\' to create your first macro.</string>
+    <string name="macros_steps_count">%1$d steps: %2$s</string>
+    <string name="macros_delete_title">Delete Macro?</string>
+    <string name="macros_delete_confirm">Are you sure you want to delete macro \'%1$s\'?</string>
+    <string name="macros_create_new">Create New Macro</string>
+    <string name="macro_status_connected_desc">Connected: Target device \'%1$s\' is currently connected and ready.</string>
+    <string name="macro_status_in_range_desc">In range: Target device \'%1$s\' was detected nearby and can be connected.</string>
+    <string name="macro_status_not_in_range_desc">Out of range: Target device \'%1$s\' is not connected and not detected. Execution disabled.</string>
+    <string name="macro_status_dialog_title">Bluetooth Status</string>
+    <string name="macro_btn_not_in_range">Device out of range</string>
+
+    <!-- Macro Editor Dialog -->
+    <string name="editor_title_edit">Edit Macro</string>
+    <string name="editor_title_create">Create New Macro</string>
+    <string name="editor_name_label">Macro Name *</string>
+    <string name="editor_desc_label">Description (optional)</string>
+    <string name="editor_default_device">Default Relay</string>
+    <string name="editor_no_default_device">None (use CONNECT in macro)</string>
+    <string name="editor_steps_title">Execution Steps (%1$d)</string>
+    <string name="editor_no_steps">No steps added yet.\nAdd commands like CONNECT, ON, DELAY, OFF or DISCONNECT.</string>
+    <string name="editor_add_step">+ Add Step</string>
+    <string name="editor_test_run">Test</string>
+    <string name="editor_step_dialog_title">Add Command Step</string>
+    <string name="editor_delay_label">Delay (ms)</string>
+    <string name="editor_target_device_label">Target Device (MAC or Name)</string>
+    <string name="editor_select_device_hint">Select saved device...</string>
+    <string name="editor_hex_label">HEX Command</string>
+    <string name="editor_text_label">Text Command</string>
+
+    <!-- Logs Screen -->
+    <string name="logs_title">Execution History (%1$d)</string>
+    <string name="logs_clear_desc">Clear History</string>
+    <string name="logs_no_logs">No macro executions logged yet.\nExecutions via app or homescreen widget will appear here.</string>
+
+    <!-- Default Macros -->
+    <string name="default_macro_on_name">Switch On</string>
+    <string name="default_macro_on_desc">Turns the relay on (sends ON command).</string>
+    <string name="default_macro_off_name">Switch Off</string>
+    <string name="default_macro_off_desc">Turns the relay off (sends OFF command).</string>
+    <string name="default_macro_pulse_name">Short Pulse</string>
+    <string name="default_macro_pulse_desc">Turns the relay on, waits 500 ms, and turns it off again.</string>
+    <string name="default_macro_connect_pulse_name">Connect with Short Pulse</string>
+    <string name="default_macro_connect_pulse_desc">Connects to relay, turns on, waits 500 ms, turns off, waits 500 ms, and disconnects.</string>
+</resources>

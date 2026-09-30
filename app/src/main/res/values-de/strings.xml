@@ -1,0 +1,145 @@
+<resources>
+    <string name="app_name">Bluetooth Relay Automator</string>
+
+    <!-- Navigation Tabs -->
+    <string name="tab_macros">Makros</string>
+    <string name="tab_devices">Geräte</string>
+    <string name="tab_terminal">Terminal</string>
+    <string name="tab_logs">Historie</string>
+
+    <!-- Info & Support Dialog -->
+    <string name="info_title">Info</string>
+    <string name="info_dialog_title">Info &amp; Unterstützung</string>
+    <string name="info_dialog_message">Danke für die Nutzung des Bluetooth Relay Automators! Wenn dir die App gefällt, freue ich mich über eine positive Bewertung – gerne mit Verbesserungsvorschlägen – im Play Store und kleine Geschenke in Form von BTC oder ETH. Danke!\n\nHinweis: Diese App funktioniert ausschließlich mit Bluetooth Low Energy (BLE) Relais-GATT-Diensten und ist nicht kompatibel mit Classic Bluetooth SPP (Serial Port Profile).</string>
+    <string name="btn_copy_address">Adresse kopieren</string>
+    <string name="address_copied">Adresse kopiert</string>
+    <string name="btn_close">Schließen</string>
+
+    <!-- Widgets -->
+    <string name="widget_name">Relais Makro</string>
+    <string name="widget_name_standard">Relais Makro (2x1)</string>
+    <string name="widget_name_compact">Relais Makro (1x1)</string>
+    <string name="widget_description">Führt ein vordefiniertes Bluetooth-Relais-Makro direkt aus.</string>
+    <string name="widget_compact_description">Kompakter 1x1-Button zur direkten Makro-Ausführung.</string>
+    <string name="widget_configure_title">Makro für Widget auswählen</string>
+    <string name="widget_select_macro_hint">Wähle ein Makro aus, das bei Klick auf das Startbildschirm-Widget ausgeführt werden soll:</string>
+    <string name="widget_no_macros">Noch keine Makros vorhanden. Bitte erstelle zuerst ein Makro in der App.</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">Makro-Ausführung</string>
+    <string name="notification_channel_description">Benachrichtigungen während der Ausführung von Bluetooth-Relais-Makros im Hintergrund.</string>
+    <string name="notification_running_title">Relais-Makro läuft</string>
+    <string name="notification_running_content">Führe Makro \"%1$s\" aus...</string>
+    <string name="notification_success">Makro \"%1$s\" erfolgreich ausgeführt.</string>
+    <string name="notification_error">Fehler bei Makro \"%1$s\": %2$s</string>
+
+    <!-- Common Buttons & Statuses -->
+    <string name="btn_run">Ausführen</string>
+    <string name="btn_cancel">Abbrechen</string>
+    <string name="btn_save">Speichern</string>
+    <string name="btn_delete">Löschen</string>
+    <string name="btn_edit">Bearbeiten</string>
+    <string name="btn_remove">Entfernen</string>
+    <string name="btn_connect">Verbinden</string>
+    <string name="btn_disconnect">Trennen</string>
+    <string name="btn_add">Hinzufügen</string>
+    <string name="btn_send">Senden</string>
+    <string name="btn_clear">Leeren</string>
+    <string name="editor_step_type_label">Befehlstyp wählen:</string>
+    <string name="editor_step_on_desc">Sendet den Einschalt-Hexbefehl: A0 01 01 A2</string>
+    <string name="editor_step_off_desc">Sendet den Ausschalt-Hexbefehl: A0 01 00 A1</string>
+    <string name="editor_step_disconnect_desc">Trennt die bestehende BLE-Verbindung.</string>
+    <string name="status_ready">Bereit</string>
+    <string name="status_executing">Wird ausgeführt...</string>
+    <string name="status_running">Läuft...</string>
+    <string name="status_starting">Wird gestartet...</string>
+    <string name="status_success">Erfolgreich</string>
+    <string name="status_error">Fehler</string>
+
+    <!-- Connection Status Bar -->
+    <string name="conn_connected">Verbunden: %1$s</string>
+    <string name="conn_connecting">Verbinde mit %1$s...</string>
+    <string name="conn_disconnecting">Trenne Verbindung...</string>
+    <string name="conn_error">Fehler: %1$s</string>
+    <string name="conn_disconnected">Getrennt (Kein Relais verbunden)</string>
+
+    <!-- Devices Screen -->
+    <string name="dev_permission_required">Bluetooth-Berechtigungen erforderlich</string>
+    <string name="dev_permission_desc">Um Bluetooth Low Energy (BLE) Relais zu scannen und zu verbinden, werden Berechtigungen benötigt. Hinweis: Es wird ausschließlich BLE unterstützt, kein Classic Bluetooth SPP.</string>
+    <string name="dev_grant_permission">Erteilen</string>
+    <string name="dev_bt_disabled">Bluetooth ist auf deinem Smartphone deaktiviert. Bitte schalte es ein.</string>
+    <string name="dev_saved_title">Gespeicherte Relais (%1$d)</string>
+    <string name="dev_scan_stop">Stopp</string>
+    <string name="dev_scan_start">BLE Scan</string>
+    <string name="dev_no_saved">Noch keine Relais gespeichert.\nStarte oben den \'BLE Scan\' um dein Relais zu finden.</string>
+    <string name="dev_discovered_title">Gefundene BLE-Geräte (%1$d)</string>
+    <string name="dev_scanning_active">Scanne nach Bluetooth Low Energy (BLE) Relais (kein SPP)...</string>
+    <string name="dev_pair_title">Relais koppeln &amp; speichern</string>
+    <string name="dev_pair_hint">Gib diesem Relais einen sprechenden Namen:</string>
+    <string name="dev_pair_name_label">Name (z.B. Garagentor, Gartenpumpe)</string>
+    <string name="dev_remove_title">Relais entfernen?</string>
+    <string name="dev_remove_confirm">Möchtest du das Relais \'%1$s\' (%2$s) aus den gespeicherten Geräten löschen?</string>
+    <string name="dev_saved_badge">Gespeichert</string>
+    <string name="dev_btn_save">+ Speichern</string>
+    <string name="dev_unknown_device">Unbekanntes Gerät</string>
+
+    <!-- Terminal Screen -->
+    <string name="term_target_relay">Ziel-Relais</string>
+    <string name="term_no_saved_relays">Keine gespeicherten Relais. Im Reiter \'Geräte\' koppeln.</string>
+    <string name="term_connecting">Verbinde...</string>
+    <string name="term_no_data">Keine Daten übertragen.\nVerbinde ein BLE-Relais oder sende einen Befehl.\n(Hinweis: Es werden ausschließlich BLE-Relais unterstützt, kein Classic SPP).</string>
+    <string name="term_btn_on">AN</string>
+    <string name="term_btn_off">AUS</string>
+    <string name="term_btn_pulse">Impuls 500ms</string>
+    <string name="term_mode_hex">HEX</string>
+    <string name="term_mode_text">TEXT</string>
+    <string name="term_placeholder_hex">z.B. A0 01 01 A2</string>
+    <string name="term_placeholder_text">z.B. AT+...</string>
+    <string name="term_btn_clear">Terminal leeren</string>
+
+    <!-- Macros Screen -->
+    <string name="macros_title">Relais Makros (%1$d)</string>
+    <string name="macros_no_macros">Noch keine Makros vorhanden.\nTippe auf das \'+\' Symbol, um dein erstes Makro zu erstellen.</string>
+    <string name="macros_steps_count">%1$d Schritte: %2$s</string>
+    <string name="macros_delete_title">Makro löschen?</string>
+    <string name="macros_delete_confirm">Möchtest du das Makro \'%1$s\' wirklich löschen?</string>
+    <string name="macros_create_new">Neues Makro erstellen</string>
+    <string name="macro_status_connected_desc">Verbunden: Das Zielgerät \'%1$s\' ist aktuell verbunden und bereit.</string>
+    <string name="macro_status_in_range_desc">In Reichweite: Das Zielgerät \'%1$s\' wurde in Funkreichweite gefunden und kann verbunden werden.</string>
+    <string name="macro_status_not_in_range_desc">Nicht in Reichweite: Das Zielgerät \'%1$s\' ist nicht verbunden und wurde nicht gefunden. Ausführung deaktiviert.</string>
+    <string name="macro_status_dialog_title">Bluetooth-Status</string>
+    <string name="macro_btn_not_in_range">Gerät nicht in Reichweite</string>
+
+    <!-- Macro Editor Dialog -->
+    <string name="editor_title_edit">Makro bearbeiten</string>
+    <string name="editor_title_create">Neues Makro erstellen</string>
+    <string name="editor_name_label">Makro-Name *</string>
+    <string name="editor_desc_label">Beschreibung (optional)</string>
+    <string name="editor_default_device">Standard-Relais</string>
+    <string name="editor_no_default_device">Keines (im Makro CONNECT verwenden)</string>
+    <string name="editor_steps_title">Ablaufschritte (%1$d)</string>
+    <string name="editor_no_steps">Noch keine Schritte hinzugefügt.\nFüge Befehle wie CONNECT, ON, DELAY, OFF oder DISCONNECT hinzu.</string>
+    <string name="editor_add_step">+ Schritt hinzufügen</string>
+    <string name="editor_test_run">Testen</string>
+    <string name="editor_step_dialog_title">Befehlsschritt hinzufügen</string>
+    <string name="editor_delay_label">Verzögerung (ms)</string>
+    <string name="editor_target_device_label">Ziel-Gerät (MAC oder Name)</string>
+    <string name="editor_select_device_hint">Gespeichertes Gerät auswählen...</string>
+    <string name="editor_hex_label">HEX-Befehl</string>
+    <string name="editor_text_label">Text-Befehl</string>
+
+    <!-- Logs Screen -->
+    <string name="logs_title">Ausführungs-Historie (%1$d)</string>
+    <string name="logs_clear_desc">Historie leeren</string>
+    <string name="logs_no_logs">Noch keine Makro-Ausführungen protokolliert.\nAusführungen über die App oder das Startbildschirm-Widget werden hier erfasst.</string>
+
+    <!-- Default Macros -->
+    <string name="default_macro_on_name">Einschalten</string>
+    <string name="default_macro_on_desc">Schaltet das Relais ein (sendet Einschaltbefehl ON).</string>
+    <string name="default_macro_off_name">Ausschalten</string>
+    <string name="default_macro_off_desc">Schaltet das Relais aus (sendet Ausschaltbefehl OFF).</string>
+    <string name="default_macro_pulse_name">Impuls</string>
+    <string name="default_macro_pulse_desc">Schaltet das Relais ein, wartet 500 ms und schaltet es wieder aus.</string>
+    <string name="default_macro_connect_pulse_name">Kurzverbindung mit Impuls</string>
+    <string name="default_macro_connect_pulse_desc">Verbindet zum Relais, schaltet ein, wartet 500 ms, schaltet aus, wartet 500 ms und trennt die Verbindung.</string>
+</resources>

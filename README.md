@@ -137,7 +137,7 @@ No internet permission is declared — the app never connects to external server
 
 ## Privacy Policy / Datenschutzerklärung
 
-The app operates on a strict **Zero-Data-Collection** policy. For full details complying with the Google Play Developer Policy and GDPR / DSGVO, please see the [Privacy Policy](privacy.html).
+The app operates on a strict **Zero-Data-Collection** policy. For full details complying with the Google Play Developer Policy and GDPR / DSGVO, please see the [Privacy Policy](https://neckarhackerapps.github.io/bluetoothrelayautomator/privacy.html).
 
 ---
 

@@ -13,6 +13,13 @@ A powerful, modern Android application for controlling, configuring, and automat
 
 Designed for garage doors, gates, garden watering pumps, light automation, and IoT projects — working 100% offline with zero cloud dependency.
 
+## Screenshots
+
+| Devices Scan | Macros | Macro Editor | BLE Terminal | Widget |
+|---|---|---|---|---|
+| ![BLE device scanning](docs/screenshots/devices_scan.png) | ![Macros list](docs/screenshots/macros_list.png) | ![Macro editor](docs/screenshots/macros_editor.png) | ![BLE terminal](docs/screenshots/terminal.png) | ![Homescreen widget](docs/screenshots/widget.png) |
+
+
 ---
 
 ## Features
@@ -66,7 +73,7 @@ The app is compatible with standard Bluetooth Low Energy relay modules and seria
 | **JDY Series (JDY-08 / JDY-30 / JDY-31)** | `0000ffe0-...` | `0000ffe1-...` | Configurable HEX/Text |
 | **Universal Fallback** | Any BLE Service | First writable characteristic | Custom HEX / Text |
 
-### ⚠️ BLE Exclusivity (No Classic Bluetooth SPP)
+### BLE Exclusivity (No Classic Bluetooth SPP)
 
 > **Important**: This app communicates **strictly via Bluetooth Low Energy (BLE / Bluetooth 4.0+)** GATT services.
 >

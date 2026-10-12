@@ -99,8 +99,8 @@ The app is compatible with standard Bluetooth Low Energy relay modules and seria
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/neckarhackerapps/bluetoothrelaisautomator.git
-   cd bluetoothrelaisautomator
+   git clone https://github.com/neckarhackerapps/bluetoothrelayautomator.git
+   cd bluetoothrelayautomator
    ```
 
 2. **Run Unit Tests**:
